@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.HTML 종합 실습문제2</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <label>1. 납품자명 : </label> &nbsp;
+            <input type="text" id="name" name="information"> <br><br>
+            <label>2. email : </label> &nbsp;
+            <input type="email" id="email" name="information" value="answer@naver.com"> <br><br>
+            <label>3. 홈페이지 : </label> &nbsp;
+            <input type="email" id="email" name="information" value="http://"> <br><br>
+            <label>4. 지역 : </label> &nbsp;
+            <select>
+                <option value="1">경기</option>
+                <option value="2">서울</option>
+                <option value="3" selected>인천</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>상품명 :  &nbsp;
+                    <input type="text">
+                </li>
+                <br>
+                <li>
+                    납품수량 :  &nbsp;
+                    <input type="text" value="최소 100">
+                </li>
+                <br>
+                <li>
+                    납품등급 :  &nbsp;
+                    <input type="range" name="point"
+                    min="0" max="100" value="50" step="10"><br>
+                </li>
+                <li>
+                    기타사항 : 
+                    <textarea cols="20" rows="2"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="send massage">
+    </form>
+</body>
+</html>
